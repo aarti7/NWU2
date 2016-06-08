@@ -21,7 +21,9 @@ class RegistriesController < ApplicationController
     @participant_list = []
     @registry.registry_participants.all.each do |registry_data|
       participant =  Participant.find(registry_data.participant_id)
-      @participant_list.push(participant)
+      if check_if_in_list(@participant_list,registry_data.participant_id).nil?
+        @participant_list.push(participant)
+      end
     end
   end
 
@@ -101,6 +103,16 @@ class RegistriesController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_registry
       @registry = Registry.find(params[:id])
+    end
+
+    def check_if_in_list(participants_list, par_id)
+      participants_list.each do |el|
+        if (el.id == par_id)
+          return 1
+        end
+      end
+
+      return nil
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

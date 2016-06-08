@@ -8127,3 +8127,1470 @@ Migrating to CreateRegistries (20160607110626)
   [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
   [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/registries/" for 127.0.0.1 at 2016-06-08 11:28:43 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.6) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.6) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/phani/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/phani/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/phani/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/phani/.rvm/gems/ruby-2.1.0@global/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+  Rendered /home/phani/.rvm/gems/ruby-2.1.0@global/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /home/phani/.rvm/gems/ruby-2.1.0@global/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/phani/.rvm/gems/ruby-2.1.0@global/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (39.6ms)
+  Rendered /home/phani/.rvm/gems/ruby-2.1.0@global/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /home/phani/.rvm/gems/ruby-2.1.0@global/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/phani/.rvm/gems/ruby-2.1.0@global/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/phani/.rvm/gems/ruby-2.1.0@global/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/phani/.rvm/gems/ruby-2.1.0@global/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (41.2ms)
+  Rendered /home/phani/.rvm/gems/ruby-2.1.0@global/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/phani/.rvm/gems/ruby-2.1.0@global/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /home/phani/.rvm/gems/ruby-2.1.0@global/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (81.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateRegistries (20160607110626)
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "registries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "location" varchar, "open" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160607110626"]]
+  [1m[36m (225.5ms)[0m  [1mcommit transaction[0m
+Migrating to CreateCoordinators (20160607110705)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "coordinators" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar, "name" varchar, "phone" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160607110705"]]
+  [1m[36m (216.0ms)[0m  [1mcommit transaction[0m
+Migrating to CreateRegistryCoordinators (20160607110721)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "registry_coordinators" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "registry_id" integer, "coordinator_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160607110721"]]
+  [1m[36m (738.3ms)[0m  [1mcommit transaction[0m
+Migrating to CreateParticipants (20160607235104)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "participants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "gender" varchar, "date_of_birth" date, "date_of_enrollment" date, "contact_method" varchar, "remarks" text, "coordinator" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160607235104"]]
+  [1m[36m (239.6ms)[0m  [1mcommit transaction[0m
+Migrating to CreateRegistryParticipants (20160607235250)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "registry_participants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "registry_id" integer, "participant_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160607235250"]]
+  [1m[36m (171.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/registries/" for 127.0.0.1 at 2016-06-08 11:29:45 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RegistriesController#index as HTML
+  [1m[35mRegistry Load (0.3ms)[0m  SELECT "registries".* FROM "registries"
+  Rendered registries/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 524ms (Views: 488.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/coordinators.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-08 11:29:46 -0700
+
+
+Started GET "/assets/participants.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-08 11:29:46 -0700
+
+
+Started GET "/assets/registries.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-08 11:29:46 -0700
+
+
+Started GET "/assets/registry_coordinators.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-08 11:29:46 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-08 11:29:46 -0700
+
+
+Started GET "/assets/registry_participants.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-08 11:29:46 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-08 11:29:46 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-06-08 11:29:46 -0700
+
+
+Started GET "/assets/scaffolds.self-68fe78044e7b3919ee48042ca0466bad418ae14b7a65d4a20a622821a3eec25d.css?body=1" for 127.0.0.1 at 2016-06-08 11:29:46 -0700
+
+
+Started GET "/assets/jquery_nested_form.self-d38045d10ebdd28aac44152cb451796232091957b86b47bedad1ab171a3a12cd.js?body=1" for 127.0.0.1 at 2016-06-08 11:29:46 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-08 11:29:46 -0700
+
+
+Started GET "/assets/coordinators.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-08 11:29:46 -0700
+
+
+Started GET "/assets/participants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-08 11:29:46 -0700
+
+
+Started GET "/assets/registries.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-08 11:29:46 -0700
+
+
+Started GET "/assets/registry_coordinators.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-08 11:29:46 -0700
+
+
+Started GET "/assets/registry_participants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-08 11:29:46 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-06-08 11:29:46 -0700
+
+
+Started GET "/registries/new" for 127.0.0.1 at 2016-06-08 11:36:06 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RegistriesController#new as HTML
+  [1m[35mCoordinator Load (0.2ms)[0m  SELECT "coordinators".* FROM "coordinators"
+  Rendered registries/_form.html.erb (86.1ms)
+  Rendered registries/new.html.erb within layouts/application (89.2ms)
+Completed 200 OK in 312ms (Views: 292.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/coordinators.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-08 11:36:07 -0700
+
+
+Started GET "/assets/participants.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-08 11:36:07 -0700
+
+
+Started GET "/assets/registries.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-08 11:36:07 -0700
+
+
+Started GET "/assets/registry_coordinators.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-08 11:36:07 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-06-08 11:36:07 -0700
+
+
+Started GET "/assets/registry_participants.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-08 11:36:07 -0700
+
+
+Started GET "/assets/scaffolds.self-68fe78044e7b3919ee48042ca0466bad418ae14b7a65d4a20a622821a3eec25d.css?body=1" for 127.0.0.1 at 2016-06-08 11:36:07 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-08 11:36:07 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-08 11:36:07 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-08 11:36:07 -0700
+
+
+Started GET "/assets/jquery_nested_form.self-d38045d10ebdd28aac44152cb451796232091957b86b47bedad1ab171a3a12cd.js?body=1" for 127.0.0.1 at 2016-06-08 11:36:07 -0700
+
+
+Started GET "/assets/participants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-08 11:36:07 -0700
+
+
+Started GET "/assets/coordinators.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-08 11:36:07 -0700
+
+
+Started GET "/assets/registries.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-08 11:36:07 -0700
+
+
+Started GET "/assets/registry_participants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-08 11:36:07 -0700
+
+
+Started GET "/assets/registry_coordinators.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-08 11:36:07 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-06-08 11:36:07 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-08 11:36:15 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/phani/.rvm/gems/ruby-2.1.0@global/gems/railties-4.2.6/lib/rails/templates/rails/welcome/index.html.erb (1.0ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/coordinators" for 127.0.0.1 at 2016-06-08 11:37:35 -0700
+Processing by CoordinatorsController#index as HTML
+  [1m[36mCoordinator Load (0.1ms)[0m  [1mSELECT "coordinators".* FROM "coordinators"[0m
+  Rendered coordinators/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 35ms (Views: 34.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/coordinators/new" for 127.0.0.1 at 2016-06-08 11:37:36 -0700
+Processing by CoordinatorsController#new as HTML
+  Rendered coordinators/_form.html.erb (2.7ms)
+  Rendered coordinators/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 28ms (Views: 23.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/coordinators/new" for 127.0.0.1 at 2016-06-08 11:37:41 -0700
+Processing by CoordinatorsController#new as HTML
+  Rendered coordinators/_form.html.erb (1.7ms)
+  Rendered coordinators/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 30ms (Views: 29.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/participants" for 127.0.0.1 at 2016-06-08 11:37:46 -0700
+Processing by ParticipantsController#index as HTML
+  [1m[35mParticipant Load (0.2ms)[0m  SELECT "participants".* FROM "participants"
+  Rendered participants/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 34ms (Views: 29.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/participants/new" for 127.0.0.1 at 2016-06-08 11:37:48 -0700
+Processing by ParticipantsController#new as HTML
+  [1m[36mRegistry Load (0.3ms)[0m  [1mSELECT "registries".* FROM "registries"[0m
+  Rendered participants/_form.html.erb (53.9ms)
+  Rendered participants/new.html.erb within layouts/application (55.8ms)
+Completed 200 OK in 103ms (Views: 88.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/coordinators" for 127.0.0.1 at 2016-06-08 11:39:27 -0700
+Processing by CoordinatorsController#index as HTML
+  [1m[35mCoordinator Load (0.2ms)[0m  SELECT "coordinators".* FROM "coordinators"
+  Rendered coordinators/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 27ms (Views: 26.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/coordinators/new" for 127.0.0.1 at 2016-06-08 11:39:29 -0700
+Processing by CoordinatorsController#new as HTML
+  Rendered coordinators/_form.html.erb (3.8ms)
+  Rendered coordinators/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 33ms (Views: 31.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/coordinators" for 127.0.0.1 at 2016-06-08 11:39:40 -0700
+Processing by CoordinatorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5usRVYwHONXpwoyrqRi6G+XN6VWsWRXh90/h+Z7FTb1bMKrIC4L7uYPd/vodUg/rkNb7alM44mz/sVN1eUhl/w==", "coordinator"=>{"email"=>"coord1@abc.com", "name"=>"coord1", "phone"=>"123456789"}, "commit"=>"Create Coordinator"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "coordinators" ("email", "name", "phone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["email", "coord1@abc.com"], ["name", "coord1"], ["phone", "123456789"], ["created_at", "2016-06-08 18:39:40.255373"], ["updated_at", "2016-06-08 18:39:40.255373"]]
+  [1m[36m (352.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/coordinators/1
+Completed 302 Found in 362ms (ActiveRecord: 352.6ms)
+
+
+Started GET "/coordinators/1" for 127.0.0.1 at 2016-06-08 11:39:40 -0700
+Processing by CoordinatorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCoordinator Load (0.5ms)[0m  SELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered coordinators/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 50ms (Views: 23.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/coordinators" for 127.0.0.1 at 2016-06-08 11:39:42 -0700
+Processing by CoordinatorsController#index as HTML
+  [1m[36mCoordinator Load (0.1ms)[0m  [1mSELECT "coordinators".* FROM "coordinators"[0m
+  Rendered coordinators/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/registries/" for 127.0.0.1 at 2016-06-08 11:39:49 -0700
+Processing by RegistriesController#index as HTML
+  [1m[35mRegistry Load (0.2ms)[0m  SELECT "registries".* FROM "registries"
+  Rendered registries/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/registries/new" for 127.0.0.1 at 2016-06-08 11:39:50 -0700
+Processing by RegistriesController#new as HTML
+  [1m[36mCoordinator Load (0.2ms)[0m  [1mSELECT "coordinators".* FROM "coordinators"[0m
+  Rendered registries/_form.html.erb (7.4ms)
+  Rendered registries/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 43ms (Views: 41.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/registries" for 127.0.0.1 at 2016-06-08 11:41:30 -0700
+Processing by RegistriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qldkmkcrFtjH0kgW6vh2J5icxtYkrKNWKQTcJyC6+o8XjN8HwK7VtK3NOkdessPX7YfU6dvNVNsh+m6rxzfSzQ==", "registry"=>{"name"=>"reg1", "location"=>"loc1", "open"=>"1", "registry_coordinators_attributes"=>{"1465411287984"=>{"coordinator_id"=>"1", "_destroy"=>"false"}}}, "commit"=>"Create Registry"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "registries" ("name", "location", "open", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "reg1"], ["location", "loc1"], ["open", "t"], ["created_at", "2016-06-08 18:41:30.427377"], ["updated_at", "2016-06-08 18:41:30.427377"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "registry_coordinators" ("coordinator_id", "registry_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["coordinator_id", 1], ["registry_id", 1], ["created_at", "2016-06-08 18:41:30.429220"], ["updated_at", "2016-06-08 18:41:30.429220"]]
+  [1m[36m (430.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/registries/1
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "registry_coordinators" ("coordinator_id", "registry_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["coordinator_id", 1], ["registry_id", 1], ["created_at", "2016-06-08 18:41:30.862702"], ["updated_at", "2016-06-08 18:41:30.862702"]]
+  [1m[35m (218.9ms)[0m  commit transaction
+Completed 302 Found in 660ms (ActiveRecord: 649.9ms)
+
+
+Started GET "/registries/1" for 127.0.0.1 at 2016-06-08 11:41:31 -0700
+Processing by RegistriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRegistry Load (0.2ms)[0m  [1mSELECT  "registries".* FROM "registries" WHERE "registries"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mRegistryCoordinator Load (0.1ms)[0m  SELECT "registry_coordinators".* FROM "registry_coordinators" WHERE "registry_coordinators"."registry_id" = ?  [["registry_id", 1]]
+  [1m[36mCoordinator Load (0.0ms)[0m  [1mSELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mRegistryParticipant Load (0.1ms)[0m  [1mSELECT "registry_participants".* FROM "registry_participants" WHERE "registry_participants"."registry_id" = ?[0m  [["registry_id", 1]]
+  Rendered registries/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 29ms (Views: 24.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/registries" for 127.0.0.1 at 2016-06-08 11:41:32 -0700
+Processing by RegistriesController#index as HTML
+  [1m[35mRegistry Load (0.1ms)[0m  SELECT "registries".* FROM "registries"
+  Rendered registries/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 35ms (Views: 34.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/registries/1" for 127.0.0.1 at 2016-06-08 11:41:35 -0700
+Processing by RegistriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRegistry Load (0.1ms)[0m  [1mSELECT  "registries".* FROM "registries" WHERE "registries"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mRegistryCoordinator Load (0.1ms)[0m  SELECT "registry_coordinators".* FROM "registry_coordinators" WHERE "registry_coordinators"."registry_id" = ?  [["registry_id", 1]]
+  [1m[36mCoordinator Load (0.1ms)[0m  [1mSELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mRegistryParticipant Load (0.1ms)[0m  [1mSELECT "registry_participants".* FROM "registry_participants" WHERE "registry_participants"."registry_id" = ?[0m  [["registry_id", 1]]
+  Rendered registries/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 42ms (Views: 38.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/registries" for 127.0.0.1 at 2016-06-08 11:41:37 -0700
+Processing by RegistriesController#index as HTML
+  [1m[35mRegistry Load (0.1ms)[0m  SELECT "registries".* FROM "registries"
+  Rendered registries/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 34ms (Views: 33.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/participants" for 127.0.0.1 at 2016-06-08 11:41:42 -0700
+Processing by ParticipantsController#index as HTML
+  [1m[36mParticipant Load (0.2ms)[0m  [1mSELECT "participants".* FROM "participants"[0m
+  Rendered participants/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 37ms (Views: 36.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/participants/new" for 127.0.0.1 at 2016-06-08 11:41:45 -0700
+Processing by ParticipantsController#new as HTML
+  [1m[35mRegistry Load (0.1ms)[0m  SELECT "registries".* FROM "registries"
+  Rendered participants/_form.html.erb (6.2ms)
+  Rendered participants/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 34ms (Views: 32.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/participants/new" for 127.0.0.1 at 2016-06-08 11:58:30 -0700
+Processing by ParticipantsController#new as HTML
+  [1m[36mRegistry Load (0.3ms)[0m  [1mSELECT "registries".* FROM "registries"[0m
+  Rendered participants/_form.html.erb (10.6ms)
+  Rendered participants/new.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 79ms (Views: 76.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/coordinators.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-08 11:58:31 -0700
+
+
+Started GET "/assets/participants.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-08 11:58:31 -0700
+
+
+Started GET "/assets/registries.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-08 11:58:31 -0700
+
+
+Started GET "/assets/registry_coordinators.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-08 11:58:31 -0700
+
+
+Started GET "/assets/registry_participants.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-08 11:58:31 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-08 11:58:31 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-06-08 11:58:31 -0700
+
+
+Started GET "/assets/scaffolds.self-68fe78044e7b3919ee48042ca0466bad418ae14b7a65d4a20a622821a3eec25d.css?body=1" for 127.0.0.1 at 2016-06-08 11:58:31 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-08 11:58:31 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-08 11:58:31 -0700
+
+
+Started GET "/assets/jquery_nested_form.self-d38045d10ebdd28aac44152cb451796232091957b86b47bedad1ab171a3a12cd.js?body=1" for 127.0.0.1 at 2016-06-08 11:58:31 -0700
+
+
+Started GET "/assets/registry_coordinators.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-08 11:58:31 -0700
+
+
+Started GET "/assets/coordinators.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-08 11:58:31 -0700
+
+
+Started GET "/assets/participants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-08 11:58:31 -0700
+
+
+Started GET "/assets/registries.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-08 11:58:31 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-06-08 11:58:31 -0700
+
+
+Started GET "/assets/registry_participants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-08 11:58:31 -0700
+
+
+Started GET "/participants/new" for 127.0.0.1 at 2016-06-08 11:58:32 -0700
+Processing by ParticipantsController#new as HTML
+  [1m[35mRegistry Load (0.2ms)[0m  SELECT "registries".* FROM "registries"
+  Rendered participants/_form.html.erb (6.0ms)
+  Rendered participants/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 40ms (Views: 38.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/coordinators.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-08 11:58:32 -0700
+
+
+Started GET "/assets/participants.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-08 11:58:32 -0700
+
+
+Started GET "/assets/registry_coordinators.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-08 11:58:32 -0700
+
+
+Started GET "/assets/registry_participants.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-08 11:58:32 -0700
+
+
+Started GET "/assets/registries.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-08 11:58:32 -0700
+
+
+Started GET "/assets/scaffolds.self-68fe78044e7b3919ee48042ca0466bad418ae14b7a65d4a20a622821a3eec25d.css?body=1" for 127.0.0.1 at 2016-06-08 11:58:32 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-08 11:58:32 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-06-08 11:58:32 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-08 11:58:32 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-08 11:58:32 -0700
+
+
+Started GET "/assets/jquery_nested_form.self-d38045d10ebdd28aac44152cb451796232091957b86b47bedad1ab171a3a12cd.js?body=1" for 127.0.0.1 at 2016-06-08 11:58:32 -0700
+
+
+Started GET "/assets/registries.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-08 11:58:32 -0700
+
+
+Started GET "/assets/participants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-08 11:58:32 -0700
+
+
+Started GET "/assets/coordinators.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-08 11:58:32 -0700
+
+
+Started GET "/assets/registry_coordinators.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-08 11:58:32 -0700
+
+
+Started GET "/assets/registry_participants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-08 11:58:32 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-06-08 11:58:32 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-08 11:58:37 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/phani/.rvm/gems/ruby-2.1.0@global/gems/railties-4.2.6/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registries/" for 127.0.0.1 at 2016-06-08 11:58:47 -0700
+Processing by RegistriesController#index as HTML
+  [1m[36mRegistry Load (0.5ms)[0m  [1mSELECT "registries".* FROM "registries"[0m
+  Rendered registries/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 26ms (Views: 24.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/registries/1" for 127.0.0.1 at 2016-06-08 11:58:50 -0700
+Processing by RegistriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRegistry Load (0.1ms)[0m  SELECT  "registries".* FROM "registries" WHERE "registries"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mRegistryCoordinator Load (0.1ms)[0m  [1mSELECT "registry_coordinators".* FROM "registry_coordinators" WHERE "registry_coordinators"."registry_id" = ?[0m  [["registry_id", 1]]
+  [1m[35mCoordinator Load (0.1ms)[0m  SELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mRegistryParticipant Load (0.0ms)[0m  SELECT "registry_participants".* FROM "registry_participants" WHERE "registry_participants"."registry_id" = ?  [["registry_id", 1]]
+  Rendered registries/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 18.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/registries" for 127.0.0.1 at 2016-06-08 11:58:53 -0700
+Processing by RegistriesController#index as HTML
+  [1m[36mRegistry Load (0.1ms)[0m  [1mSELECT "registries".* FROM "registries"[0m
+  Rendered registries/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 19ms (Views: 18.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/registries/new" for 127.0.0.1 at 2016-06-08 11:59:30 -0700
+Processing by RegistriesController#new as HTML
+  [1m[35mCoordinator Load (0.3ms)[0m  SELECT "coordinators".* FROM "coordinators"
+  Rendered registries/_form.html.erb (7.4ms)
+  Rendered registries/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 47ms (Views: 45.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/registries" for 127.0.0.1 at 2016-06-08 11:59:46 -0700
+Processing by RegistriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"730+ZWgqZKpUSfXLOe6BQhrIQzyxGjZUvFMQkDYukulSpoX476+nxj5Wh5qNpDSyb9NRA057wdm0raIc0aO6qw==", "registry"=>{"name"=>"reg2", "location"=>"loc2", "open"=>"1", "registry_coordinators_attributes"=>{"1465412383025"=>{"coordinator_id"=>"1", "_destroy"=>"false"}}}, "commit"=>"Create Registry"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "registries" ("name", "location", "open", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "reg2"], ["location", "loc2"], ["open", "t"], ["created_at", "2016-06-08 18:59:46.337376"], ["updated_at", "2016-06-08 18:59:46.337376"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "registry_coordinators" ("coordinator_id", "registry_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["coordinator_id", 1], ["registry_id", 2], ["created_at", "2016-06-08 18:59:46.338489"], ["updated_at", "2016-06-08 18:59:46.338489"]]
+  [1m[35m (299.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/registries/2
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "registry_coordinators" ("coordinator_id", "registry_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["coordinator_id", 1], ["registry_id", 2], ["created_at", "2016-06-08 18:59:46.641339"], ["updated_at", "2016-06-08 18:59:46.641339"]]
+  [1m[36m (196.7ms)[0m  [1mcommit transaction[0m
+Completed 302 Found in 559ms (ActiveRecord: 496.9ms)
+
+
+Started GET "/registries/2" for 127.0.0.1 at 2016-06-08 11:59:46 -0700
+Processing by RegistriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRegistry Load (0.1ms)[0m  SELECT  "registries".* FROM "registries" WHERE "registries"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mRegistryCoordinator Load (0.1ms)[0m  [1mSELECT "registry_coordinators".* FROM "registry_coordinators" WHERE "registry_coordinators"."registry_id" = ?[0m  [["registry_id", 2]]
+  [1m[35mCoordinator Load (0.1ms)[0m  SELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mRegistryParticipant Load (0.0ms)[0m  SELECT "registry_participants".* FROM "registry_participants" WHERE "registry_participants"."registry_id" = ?  [["registry_id", 2]]
+  Rendered registries/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 51ms (Views: 47.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/registries" for 127.0.0.1 at 2016-06-08 11:59:50 -0700
+Processing by RegistriesController#index as HTML
+  [1m[36mRegistry Load (0.1ms)[0m  [1mSELECT "registries".* FROM "registries"[0m
+  Rendered registries/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/participants" for 127.0.0.1 at 2016-06-08 12:02:00 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ParticipantsController#index as HTML
+  [1m[35mParticipant Load (0.1ms)[0m  SELECT "participants".* FROM "participants"
+  Rendered participants/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 204ms (Views: 188.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/coordinators.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-08 12:02:01 -0700
+
+
+Started GET "/assets/participants.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-08 12:02:01 -0700
+
+
+Started GET "/assets/registries.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-08 12:02:01 -0700
+
+
+Started GET "/assets/registry_coordinators.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-08 12:02:01 -0700
+
+
+Started GET "/assets/registry_participants.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-08 12:02:01 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-08 12:02:01 -0700
+
+
+Started GET "/assets/scaffolds.self-68fe78044e7b3919ee48042ca0466bad418ae14b7a65d4a20a622821a3eec25d.css?body=1" for 127.0.0.1 at 2016-06-08 12:02:01 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-08 12:02:01 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-06-08 12:02:01 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-08 12:02:01 -0700
+
+
+Started GET "/assets/jquery_nested_form.self-d38045d10ebdd28aac44152cb451796232091957b86b47bedad1ab171a3a12cd.js?body=1" for 127.0.0.1 at 2016-06-08 12:02:01 -0700
+
+
+Started GET "/assets/coordinators.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-08 12:02:01 -0700
+
+
+Started GET "/assets/participants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-08 12:02:01 -0700
+
+
+Started GET "/assets/registries.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-08 12:02:01 -0700
+
+
+Started GET "/assets/registry_participants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-08 12:02:01 -0700
+
+
+Started GET "/assets/registry_coordinators.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-08 12:02:01 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-06-08 12:02:01 -0700
+
+
+Started GET "/participants/new" for 127.0.0.1 at 2016-06-08 12:02:07 -0700
+Processing by ParticipantsController#new as HTML
+  [1m[36mRegistry Load (0.2ms)[0m  [1mSELECT "registries".* FROM "registries"[0m
+  Rendered participants/_form.html.erb (38.3ms)
+  Rendered participants/new.html.erb within layouts/application (40.8ms)
+Completed 200 OK in 78ms (Views: 60.7ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/participants" for 127.0.0.1 at 2016-06-08 12:02:23 -0700
+Processing by ParticipantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qyF12synOVtb3xx1u8/FML6jHSEAC+/pHXyyFhrX7foW+s5HSyL6NzHAbiQPhXDAy7gPHv9qGGQVggCa/VrFuA==", "participant"=>{"name"=>"part1", "gender"=>"female", "date_of_birth(1i)"=>"2016", "date_of_birth(2i)"=>"6", "date_of_birth(3i)"=>"8", "date_of_enrollment(1i)"=>"2016", "date_of_enrollment(2i)"=>"6", "date_of_enrollment(3i)"=>"8", "contact_method"=>"phone", "remarks"=>"", "coordinator"=>"coord1", "registry_participants_attributes"=>{"0"=>{"registry_id"=>"2", "_destroy"=>"false"}}}, "commit"=>"Create Participant"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "participants" ("name", "gender", "contact_method", "remarks", "coordinator", "date_of_birth", "date_of_enrollment", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "part1"], ["gender", "female"], ["contact_method", "phone"], ["remarks", ""], ["coordinator", "coord1"], ["date_of_birth", "2016-06-08"], ["date_of_enrollment", "2016-06-08"], ["created_at", "2016-06-08 19:02:23.034144"], ["updated_at", "2016-06-08 19:02:23.034144"]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "registry_participants" ("registry_id", "participant_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["registry_id", 2], ["participant_id", 1], ["created_at", "2016-06-08 19:02:23.038418"], ["updated_at", "2016-06-08 19:02:23.038418"]]
+  [1m[36m (357.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/participants/1
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "registry_participants" ("registry_id", "participant_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["registry_id", 2], ["participant_id", 1], ["created_at", "2016-06-08 19:02:23.400248"], ["updated_at", "2016-06-08 19:02:23.400248"]]
+  [1m[35m (218.8ms)[0m  commit transaction
+Completed 302 Found in 590ms (ActiveRecord: 577.0ms)
+
+
+Started GET "/participants/1" for 127.0.0.1 at 2016-06-08 12:02:23 -0700
+Processing by ParticipantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mParticipant Load (0.2ms)[0m  [1mSELECT  "participants".* FROM "participants" WHERE "participants"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered participants/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 30ms (Views: 25.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/participants" for 127.0.0.1 at 2016-06-08 12:02:27 -0700
+Processing by ParticipantsController#index as HTML
+  [1m[35mParticipant Load (0.3ms)[0m  SELECT "participants".* FROM "participants"
+  Rendered participants/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 29ms (Views: 27.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/participants/1" for 127.0.0.1 at 2016-06-08 12:02:34 -0700
+Processing by ParticipantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mParticipant Load (0.1ms)[0m  [1mSELECT  "participants".* FROM "participants" WHERE "participants"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered participants/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/registries/" for 127.0.0.1 at 2016-06-08 12:02:39 -0700
+Processing by RegistriesController#index as HTML
+  [1m[35mRegistry Load (0.2ms)[0m  SELECT "registries".* FROM "registries"
+  Rendered registries/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 32ms (Views: 30.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/registries/1" for 127.0.0.1 at 2016-06-08 12:02:42 -0700
+Processing by RegistriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRegistry Load (0.2ms)[0m  [1mSELECT  "registries".* FROM "registries" WHERE "registries"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mRegistryCoordinator Load (0.1ms)[0m  SELECT "registry_coordinators".* FROM "registry_coordinators" WHERE "registry_coordinators"."registry_id" = ?  [["registry_id", 1]]
+  [1m[36mCoordinator Load (0.1ms)[0m  [1mSELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mRegistryParticipant Load (0.1ms)[0m  [1mSELECT "registry_participants".* FROM "registry_participants" WHERE "registry_participants"."registry_id" = ?[0m  [["registry_id", 1]]
+  Rendered registries/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 38ms (Views: 22.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/registries" for 127.0.0.1 at 2016-06-08 12:02:44 -0700
+Processing by RegistriesController#index as HTML
+  [1m[35mRegistry Load (0.1ms)[0m  SELECT "registries".* FROM "registries"
+  Rendered registries/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/registries/2" for 127.0.0.1 at 2016-06-08 12:02:45 -0700
+Processing by RegistriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRegistry Load (0.1ms)[0m  [1mSELECT  "registries".* FROM "registries" WHERE "registries"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mRegistryCoordinator Load (0.1ms)[0m  SELECT "registry_coordinators".* FROM "registry_coordinators" WHERE "registry_coordinators"."registry_id" = ?  [["registry_id", 2]]
+  [1m[36mCoordinator Load (0.1ms)[0m  [1mSELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mRegistryParticipant Load (0.1ms)[0m  [1mSELECT "registry_participants".* FROM "registry_participants" WHERE "registry_participants"."registry_id" = ?[0m  [["registry_id", 2]]
+  [1m[35mParticipant Load (0.1ms)[0m  SELECT  "participants".* FROM "participants" WHERE "participants"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "participants".* FROM "participants" WHERE "participants"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered registries/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 69ms (Views: 23.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/participants" for 127.0.0.1 at 2016-06-08 12:03:08 -0700
+Processing by ParticipantsController#index as HTML
+  [1m[35mParticipant Load (0.5ms)[0m  SELECT "participants".* FROM "participants"
+  Rendered participants/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 37ms (Views: 35.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/participants/new" for 127.0.0.1 at 2016-06-08 12:03:15 -0700
+Processing by ParticipantsController#new as HTML
+  [1m[36mRegistry Load (0.1ms)[0m  [1mSELECT "registries".* FROM "registries"[0m
+  Rendered participants/_form.html.erb (6.4ms)
+  Rendered participants/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 28ms (Views: 26.7ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/participants" for 127.0.0.1 at 2016-06-08 12:03:34 -0700
+Processing by ParticipantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ubtwu3iCfp8iwFhjzIh0jMzpIaFiAy/BGdmGe8ICwGTsYMsm/we980jfKjJ4wsF8ufIznp1i2EwRJzT3JY/oJg==", "participant"=>{"name"=>"part7", "gender"=>"female", "date_of_birth(1i)"=>"2016", "date_of_birth(2i)"=>"6", "date_of_birth(3i)"=>"8", "date_of_enrollment(1i)"=>"2016", "date_of_enrollment(2i)"=>"6", "date_of_enrollment(3i)"=>"8", "contact_method"=>"phone", "remarks"=>"", "coordinator"=>"coord1", "registry_participants_attributes"=>{"0"=>{"registry_id"=>"1", "_destroy"=>"false"}}}, "commit"=>"Create Participant"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "participants" ("name", "gender", "contact_method", "remarks", "coordinator", "date_of_birth", "date_of_enrollment", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "part7"], ["gender", "female"], ["contact_method", "phone"], ["remarks", ""], ["coordinator", "coord1"], ["date_of_birth", "2016-06-08"], ["date_of_enrollment", "2016-06-08"], ["created_at", "2016-06-08 19:03:34.840674"], ["updated_at", "2016-06-08 19:03:34.840674"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "registry_participants" ("registry_id", "participant_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["registry_id", 1], ["participant_id", 2], ["created_at", "2016-06-08 19:03:34.842556"], ["updated_at", "2016-06-08 19:03:34.842556"]]
+  [1m[36m (387.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/participants/2
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "registry_participants" ("registry_id", "participant_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["registry_id", 1], ["participant_id", 2], ["created_at", "2016-06-08 19:03:35.234496"], ["updated_at", "2016-06-08 19:03:35.234496"]]
+  [1m[35m (240.9ms)[0m  commit transaction
+Completed 302 Found in 640ms (ActiveRecord: 629.3ms)
+
+
+Started GET "/participants/2" for 127.0.0.1 at 2016-06-08 12:03:35 -0700
+Processing by ParticipantsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mParticipant Load (0.1ms)[0m  [1mSELECT  "participants".* FROM "participants" WHERE "participants"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered participants/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 25ms (Views: 24.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/registries/" for 127.0.0.1 at 2016-06-08 12:03:43 -0700
+Processing by RegistriesController#index as HTML
+  [1m[35mRegistry Load (0.3ms)[0m  SELECT "registries".* FROM "registries"
+  Rendered registries/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/registries/2" for 127.0.0.1 at 2016-06-08 12:03:45 -0700
+Processing by RegistriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRegistry Load (0.1ms)[0m  [1mSELECT  "registries".* FROM "registries" WHERE "registries"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mRegistryCoordinator Load (0.1ms)[0m  SELECT "registry_coordinators".* FROM "registry_coordinators" WHERE "registry_coordinators"."registry_id" = ?  [["registry_id", 2]]
+  [1m[36mCoordinator Load (0.0ms)[0m  [1mSELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mRegistryParticipant Load (0.0ms)[0m  [1mSELECT "registry_participants".* FROM "registry_participants" WHERE "registry_participants"."registry_id" = ?[0m  [["registry_id", 2]]
+  [1m[35mParticipant Load (0.0ms)[0m  SELECT  "participants".* FROM "participants" WHERE "participants"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "participants".* FROM "participants" WHERE "participants"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered registries/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 47ms (Views: 43.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/registries" for 127.0.0.1 at 2016-06-08 12:03:47 -0700
+Processing by RegistriesController#index as HTML
+  [1m[35mRegistry Load (0.1ms)[0m  SELECT "registries".* FROM "registries"
+  Rendered registries/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 35ms (Views: 34.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/registries/1" for 127.0.0.1 at 2016-06-08 12:03:48 -0700
+Processing by RegistriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRegistry Load (0.2ms)[0m  [1mSELECT  "registries".* FROM "registries" WHERE "registries"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mRegistryCoordinator Load (0.1ms)[0m  SELECT "registry_coordinators".* FROM "registry_coordinators" WHERE "registry_coordinators"."registry_id" = ?  [["registry_id", 1]]
+  [1m[36mCoordinator Load (0.1ms)[0m  [1mSELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mRegistryParticipant Load (0.1ms)[0m  [1mSELECT "registry_participants".* FROM "registry_participants" WHERE "registry_participants"."registry_id" = ?[0m  [["registry_id", 1]]
+  [1m[35mParticipant Load (0.1ms)[0m  SELECT  "participants".* FROM "participants" WHERE "participants"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "participants".* FROM "participants" WHERE "participants"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered registries/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 46ms (Views: 38.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/registries" for 127.0.0.1 at 2016-06-08 12:09:14 -0700
+Processing by RegistriesController#index as HTML
+  [1m[35mRegistry Load (0.4ms)[0m  SELECT "registries".* FROM "registries"
+  Rendered registries/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 39ms (Views: 37.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/registries/new" for 127.0.0.1 at 2016-06-08 12:09:16 -0700
+Processing by RegistriesController#new as HTML
+  [1m[36mCoordinator Load (0.6ms)[0m  [1mSELECT "coordinators".* FROM "coordinators"[0m
+  Rendered registries/_form.html.erb (8.8ms)
+  Rendered registries/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 38ms (Views: 36.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/coordinators" for 127.0.0.1 at 2016-06-08 12:09:34 -0700
+Processing by CoordinatorsController#index as HTML
+  [1m[35mCoordinator Load (0.2ms)[0m  SELECT "coordinators".* FROM "coordinators"
+  Rendered coordinators/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 61ms (Views: 58.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/coordinators/new" for 127.0.0.1 at 2016-06-08 12:09:35 -0700
+Processing by CoordinatorsController#new as HTML
+  Rendered coordinators/_form.html.erb (3.6ms)
+  Rendered coordinators/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 27ms (Views: 25.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/coordinators" for 127.0.0.1 at 2016-06-08 12:09:49 -0700
+Processing by CoordinatorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0Q+VE1ICfC1AgSo9V0qFqqkFV2A1CnF/tkKFGMm4Sbhs1C6O1Ye/QSqeWGzjADBa3B5FX8prhvK+vDeULjVh+g==", "coordinator"=>{"email"=>"coord9@abc.com", "name"=>"coord9", "phone"=>"23456"}, "commit"=>"Create Coordinator"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "coordinators" ("email", "name", "phone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["email", "coord9@abc.com"], ["name", "coord9"], ["phone", "23456"], ["created_at", "2016-06-08 19:09:49.574291"], ["updated_at", "2016-06-08 19:09:49.574291"]]
+  [1m[36m (246.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/coordinators/2
+Completed 302 Found in 249ms (ActiveRecord: 246.4ms)
+
+
+Started GET "/coordinators/2" for 127.0.0.1 at 2016-06-08 12:09:49 -0700
+Processing by CoordinatorsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCoordinator Load (0.1ms)[0m  SELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered coordinators/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 30ms (Views: 29.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/registries/" for 127.0.0.1 at 2016-06-08 12:09:53 -0700
+Processing by RegistriesController#index as HTML
+  [1m[36mRegistry Load (0.3ms)[0m  [1mSELECT "registries".* FROM "registries"[0m
+  Rendered registries/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 29ms (Views: 28.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/registries/new" for 127.0.0.1 at 2016-06-08 12:09:59 -0700
+Processing by RegistriesController#new as HTML
+  [1m[35mCoordinator Load (0.2ms)[0m  SELECT "coordinators".* FROM "coordinators"
+  Rendered registries/_form.html.erb (3.6ms)
+  Rendered registries/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 38ms (Views: 36.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/registries" for 127.0.0.1 at 2016-06-08 12:10:10 -0700
+Processing by RegistriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ifTw/2Wb3NMyPUypCnceHME4laoXv/uUyvXXA+sz1eU0L0ti4h4fv1giPvi+PavstCOHlejeDBnCC2WPDL79pw==", "registry"=>{"name"=>"reg9", "location"=>"loc9", "open"=>"1", "registry_coordinators_attributes"=>{"1465413006862"=>{"coordinator_id"=>"2", "_destroy"=>"false"}}}, "commit"=>"Create Registry"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "registries" ("name", "location", "open", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "reg9"], ["location", "loc9"], ["open", "t"], ["created_at", "2016-06-08 19:10:10.364908"], ["updated_at", "2016-06-08 19:10:10.364908"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "registry_coordinators" ("coordinator_id", "registry_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["coordinator_id", 2], ["registry_id", 3], ["created_at", "2016-06-08 19:10:10.365996"], ["updated_at", "2016-06-08 19:10:10.365996"]]
+  [1m[35m (267.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/registries/3
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "registry_coordinators" ("coordinator_id", "registry_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["coordinator_id", 2], ["registry_id", 3], ["created_at", "2016-06-08 19:10:10.638119"], ["updated_at", "2016-06-08 19:10:10.638119"]]
+  [1m[36m (195.6ms)[0m  [1mcommit transaction[0m
+Completed 302 Found in 473ms (ActiveRecord: 463.8ms)
+
+
+Started GET "/registries/3" for 127.0.0.1 at 2016-06-08 12:10:10 -0700
+Processing by RegistriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mRegistry Load (0.1ms)[0m  SELECT  "registries".* FROM "registries" WHERE "registries"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mRegistryCoordinator Load (0.4ms)[0m  [1mSELECT "registry_coordinators".* FROM "registry_coordinators" WHERE "registry_coordinators"."registry_id" = ?[0m  [["registry_id", 3]]
+  [1m[35mCoordinator Load (0.4ms)[0m  SELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mRegistryParticipant Load (0.4ms)[0m  SELECT "registry_participants".* FROM "registry_participants" WHERE "registry_participants"."registry_id" = ?  [["registry_id", 3]]
+  Rendered registries/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 37ms (Views: 28.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/participants" for 127.0.0.1 at 2016-06-08 12:10:15 -0700
+Processing by ParticipantsController#index as HTML
+  [1m[36mParticipant Load (0.2ms)[0m  [1mSELECT "participants".* FROM "participants"[0m
+  Rendered participants/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/participants/new" for 127.0.0.1 at 2016-06-08 12:10:17 -0700
+Processing by ParticipantsController#new as HTML
+  [1m[35mRegistry Load (0.1ms)[0m  SELECT "registries".* FROM "registries"
+  Rendered participants/_form.html.erb (5.8ms)
+  Rendered participants/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 36ms (Views: 34.8ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/participants" for 127.0.0.1 at 2016-06-08 12:10:41 -0700
+Processing by ParticipantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/jW4zSNX6Id0BLKYh2OtST5qR4XWYvRyOBW4tVKU+ttD7gNQpNIr6x4bwMkzKRi5S3FVuikDA/8w6wo5tRnSmQ==", "participant"=>{"name"=>"part9", "gender"=>"female", "date_of_birth(1i)"=>"2016", "date_of_birth(2i)"=>"6", "date_of_birth(3i)"=>"8", "date_of_enrollment(1i)"=>"2016", "date_of_enrollment(2i)"=>"6", "date_of_enrollment(3i)"=>"18", "contact_method"=>"phone", "remarks"=>"", "coordinator"=>"coord9", "registry_participants_attributes"=>{"0"=>{"registry_id"=>"3", "_destroy"=>"false"}}}, "commit"=>"Create Participant"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "participants" ("name", "gender", "contact_method", "remarks", "coordinator", "date_of_birth", "date_of_enrollment", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "part9"], ["gender", "female"], ["contact_method", "phone"], ["remarks", ""], ["coordinator", "coord9"], ["date_of_birth", "2016-06-08"], ["date_of_enrollment", "2016-06-18"], ["created_at", "2016-06-08 19:10:41.285528"], ["updated_at", "2016-06-08 19:10:41.285528"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "registry_participants" ("registry_id", "participant_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["registry_id", 3], ["participant_id", 3], ["created_at", "2016-06-08 19:10:41.287650"], ["updated_at", "2016-06-08 19:10:41.287650"]]
+  [1m[35m (237.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/participants/3
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "registry_participants" ("registry_id", "participant_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["registry_id", 3], ["participant_id", 3], ["created_at", "2016-06-08 19:10:41.530463"], ["updated_at", "2016-06-08 19:10:41.530463"]]
+  [1m[36m (162.5ms)[0m  [1mcommit transaction[0m
+Completed 302 Found in 411ms (ActiveRecord: 400.5ms)
+
+
+Started GET "/participants/3" for 127.0.0.1 at 2016-06-08 12:10:41 -0700
+Processing by ParticipantsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mParticipant Load (0.1ms)[0m  SELECT  "participants".* FROM "participants" WHERE "participants"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered participants/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 34ms (Views: 33.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/registries/" for 127.0.0.1 at 2016-06-08 12:10:46 -0700
+Processing by RegistriesController#index as HTML
+  [1m[36mRegistry Load (0.2ms)[0m  [1mSELECT "registries".* FROM "registries"[0m
+  Rendered registries/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 83ms (Views: 81.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/registries/3" for 127.0.0.1 at 2016-06-08 12:10:48 -0700
+Processing by RegistriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mRegistry Load (0.1ms)[0m  SELECT  "registries".* FROM "registries" WHERE "registries"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mRegistryCoordinator Load (0.1ms)[0m  [1mSELECT "registry_coordinators".* FROM "registry_coordinators" WHERE "registry_coordinators"."registry_id" = ?[0m  [["registry_id", 3]]
+  [1m[35mCoordinator Load (0.0ms)[0m  SELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mRegistryParticipant Load (0.1ms)[0m  SELECT "registry_participants".* FROM "registry_participants" WHERE "registry_participants"."registry_id" = ?  [["registry_id", 3]]
+  [1m[36mParticipant Load (0.0ms)[0m  [1mSELECT  "participants".* FROM "participants" WHERE "participants"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "participants".* FROM "participants" WHERE "participants"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered registries/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 58ms (Views: 54.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/registries" for 127.0.0.1 at 2016-06-08 12:19:48 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RegistriesController#index as HTML
+  [1m[35mRegistry Load (0.5ms)[0m  SELECT "registries".* FROM "registries"
+  Rendered registries/index.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 636ms (Views: 595.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/participants" for 127.0.0.1 at 2016-06-08 12:19:56 -0700
+Processing by ParticipantsController#index as HTML
+  [1m[36mParticipant Load (0.5ms)[0m  [1mSELECT "participants".* FROM "participants"[0m
+  Rendered participants/index.html.erb within layouts/application (26.5ms)
+Completed 200 OK in 121ms (Views: 111.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/participants/new" for 127.0.0.1 at 2016-06-08 12:19:58 -0700
+Processing by ParticipantsController#new as HTML
+  [1m[35mRegistry Load (0.4ms)[0m  SELECT "registries".* FROM "registries"
+  Rendered participants/_form.html.erb (97.5ms)
+  Rendered participants/new.html.erb within layouts/application (104.6ms)
+Completed 200 OK in 163ms (Views: 158.2ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/participants" for 127.0.0.1 at 2016-06-08 12:20:23 -0700
+Processing by ParticipantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6oIsVxqm76sNy/ZgeodbOowyOQqxZ6Hr0xp5wIrxEaxXWZfKnSMsx2fUhDHOze7K+SkrNU4GVmbb5MtMbXw57g==", "participant"=>{"name"=>"part10", "gender"=>"female", "date_of_birth(1i)"=>"2016", "date_of_birth(2i)"=>"6", "date_of_birth(3i)"=>"8", "date_of_enrollment(1i)"=>"2016", "date_of_enrollment(2i)"=>"6", "date_of_enrollment(3i)"=>"8", "contact_method"=>"phone", "remarks"=>"", "coordinator"=>"coord1", "registry_participants_attributes"=>{"0"=>{"registry_id"=>"1", "_destroy"=>"false"}}}, "commit"=>"Create Participant"}
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "participants" ("name", "gender", "contact_method", "remarks", "coordinator", "date_of_birth", "date_of_enrollment", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "part10"], ["gender", "female"], ["contact_method", "phone"], ["remarks", ""], ["coordinator", "coord1"], ["date_of_birth", "2016-06-08"], ["date_of_enrollment", "2016-06-08"], ["created_at", "2016-06-08 19:20:23.387165"], ["updated_at", "2016-06-08 19:20:23.387165"]]
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "registry_participants" ("registry_id", "participant_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["registry_id", 1], ["participant_id", 4], ["created_at", "2016-06-08 19:20:23.400754"], ["updated_at", "2016-06-08 19:20:23.400754"]]
+  [1m[35m (143.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/participants/4
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "registry_participants" ("registry_id", "participant_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["registry_id", 1], ["participant_id", 4], ["created_at", "2016-06-08 19:20:23.556795"], ["updated_at", "2016-06-08 19:20:23.556795"]]
+  [1m[36m (325.0ms)[0m  [1mcommit transaction[0m
+Completed 302 Found in 508ms (ActiveRecord: 470.1ms)
+
+
+Started GET "/participants/4" for 127.0.0.1 at 2016-06-08 12:20:23 -0700
+Processing by ParticipantsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mParticipant Load (0.5ms)[0m  SELECT  "participants".* FROM "participants" WHERE "participants"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered participants/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 80ms (Views: 64.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/registries/" for 127.0.0.1 at 2016-06-08 12:20:33 -0700
+Processing by RegistriesController#index as HTML
+  [1m[36mRegistry Load (0.3ms)[0m  [1mSELECT "registries".* FROM "registries"[0m
+  Rendered registries/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 63ms (Views: 60.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/registries/3" for 127.0.0.1 at 2016-06-08 12:20:39 -0700
+Processing by RegistriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mRegistry Load (0.4ms)[0m  SELECT  "registries".* FROM "registries" WHERE "registries"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mRegistryCoordinator Load (0.3ms)[0m  [1mSELECT "registry_coordinators".* FROM "registry_coordinators" WHERE "registry_coordinators"."registry_id" = ?[0m  [["registry_id", 3]]
+  [1m[35mCoordinator Load (0.3ms)[0m  SELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mRegistryParticipant Load (0.5ms)[0m  SELECT "registry_participants".* FROM "registry_participants" WHERE "registry_participants"."registry_id" = ?  [["registry_id", 3]]
+  [1m[36mParticipant Load (0.3ms)[0m  [1mSELECT  "participants".* FROM "participants" WHERE "participants"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "participants".* FROM "participants" WHERE "participants"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered registries/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 107ms (Views: 54.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/registries" for 127.0.0.1 at 2016-06-08 12:20:41 -0700
+Processing by RegistriesController#index as HTML
+  [1m[36mRegistry Load (0.3ms)[0m  [1mSELECT "registries".* FROM "registries"[0m
+  Rendered registries/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 69ms (Views: 66.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/registries/1" for 127.0.0.1 at 2016-06-08 12:20:43 -0700
+Processing by RegistriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRegistry Load (0.3ms)[0m  SELECT  "registries".* FROM "registries" WHERE "registries"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mRegistryCoordinator Load (0.2ms)[0m  [1mSELECT "registry_coordinators".* FROM "registry_coordinators" WHERE "registry_coordinators"."registry_id" = ?[0m  [["registry_id", 1]]
+  [1m[35mCoordinator Load (0.1ms)[0m  SELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mRegistryParticipant Load (0.2ms)[0m  SELECT "registry_participants".* FROM "registry_participants" WHERE "registry_participants"."registry_id" = ?  [["registry_id", 1]]
+  [1m[36mParticipant Load (0.1ms)[0m  [1mSELECT  "participants".* FROM "participants" WHERE "participants"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "participants".* FROM "participants" WHERE "participants"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mParticipant Load (0.1ms)[0m  [1mSELECT  "participants".* FROM "participants" WHERE "participants"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "participants".* FROM "participants" WHERE "participants"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered registries/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 81ms (Views: 69.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/registries" for 127.0.0.1 at 2016-06-08 12:20:47 -0700
+Processing by RegistriesController#index as HTML
+  [1m[36mRegistry Load (0.3ms)[0m  [1mSELECT "registries".* FROM "registries"[0m
+  Rendered registries/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 71ms (Views: 69.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/registries/2" for 127.0.0.1 at 2016-06-08 12:20:48 -0700
+Processing by RegistriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRegistry Load (0.2ms)[0m  SELECT  "registries".* FROM "registries" WHERE "registries"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mRegistryCoordinator Load (0.2ms)[0m  [1mSELECT "registry_coordinators".* FROM "registry_coordinators" WHERE "registry_coordinators"."registry_id" = ?[0m  [["registry_id", 2]]
+  [1m[35mCoordinator Load (0.1ms)[0m  SELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mRegistryParticipant Load (0.2ms)[0m  SELECT "registry_participants".* FROM "registry_participants" WHERE "registry_participants"."registry_id" = ?  [["registry_id", 2]]
+  [1m[36mParticipant Load (0.2ms)[0m  [1mSELECT  "participants".* FROM "participants" WHERE "participants"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "participants".* FROM "participants" WHERE "participants"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered registries/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 74ms (Views: 64.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/registries" for 127.0.0.1 at 2016-06-08 12:20:50 -0700
+Processing by RegistriesController#index as HTML
+  [1m[36mRegistry Load (0.3ms)[0m  [1mSELECT "registries".* FROM "registries"[0m
+  Rendered registries/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 79ms (Views: 77.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/coordinators" for 127.0.0.1 at 2016-06-08 12:21:09 -0700
+Processing by CoordinatorsController#index as HTML
+  [1m[35mCoordinator Load (0.6ms)[0m  SELECT "coordinators".* FROM "coordinators"
+  Rendered coordinators/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 68ms (Views: 66.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/coordinators/new" for 127.0.0.1 at 2016-06-08 12:21:11 -0700
+Processing by CoordinatorsController#new as HTML
+  Rendered coordinators/_form.html.erb (5.6ms)
+  Rendered coordinators/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 72ms (Views: 69.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/coordinators" for 127.0.0.1 at 2016-06-08 12:21:32 -0700
+Processing by CoordinatorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"V/vjQX8twAmRZ1hcMW0ZLCshSbPPU6SccIKpxZNGe6HqIFjc+KgDZft4Kg2FJ6zcXjpbjDAyUxF4fBtJdMtT4w==", "coordinator"=>{"email"=>"coord211@abc.com", "name"=>"coord211", "phone"=>"211111"}, "commit"=>"Create Coordinator"}
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "coordinators" ("email", "name", "phone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["email", "coord211@abc.com"], ["name", "coord211"], ["phone", "211111"], ["created_at", "2016-06-08 19:21:32.556970"], ["updated_at", "2016-06-08 19:21:32.556970"]]
+  [1m[36m (534.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/coordinators/3
+Completed 302 Found in 547ms (ActiveRecord: 535.7ms)
+
+
+Started GET "/coordinators/3" for 127.0.0.1 at 2016-06-08 12:21:33 -0700
+Processing by CoordinatorsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mCoordinator Load (0.2ms)[0m  SELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered coordinators/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 46ms (Views: 43.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/registries/" for 127.0.0.1 at 2016-06-08 12:21:40 -0700
+Processing by RegistriesController#index as HTML
+  [1m[36mRegistry Load (1.1ms)[0m  [1mSELECT "registries".* FROM "registries"[0m
+  Rendered registries/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 62ms (Views: 58.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/registries/new" for 127.0.0.1 at 2016-06-08 12:21:41 -0700
+Processing by RegistriesController#new as HTML
+  [1m[35mCoordinator Load (0.2ms)[0m  SELECT "coordinators".* FROM "coordinators"
+  Rendered registries/_form.html.erb (7.8ms)
+  Rendered registries/new.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 50ms (Views: 48.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/registries" for 127.0.0.1 at 2016-06-08 12:21:53 -0700
+Processing by RegistriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h47Ri4U+gj54Plqj17Llwr+h/98LW2qoT584ef6JBUA6VWoWArtBUhIhKPJj+FAyyrrt4PQ6nSVHYYr1GQQtAg==", "registry"=>{"name"=>"reg211", "location"=>"loc211", "open"=>"1", "registry_coordinators_attributes"=>{"1465413710387"=>{"coordinator_id"=>"3", "_destroy"=>"false"}}}, "commit"=>"Create Registry"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "registries" ("name", "location", "open", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "reg211"], ["location", "loc211"], ["open", "t"], ["created_at", "2016-06-08 19:21:53.631525"], ["updated_at", "2016-06-08 19:21:53.631525"]]
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "registry_coordinators" ("coordinator_id", "registry_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["coordinator_id", 3], ["registry_id", 4], ["created_at", "2016-06-08 19:21:53.633357"], ["updated_at", "2016-06-08 19:21:53.633357"]]
+  [1m[35m (237.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/registries/4
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "registry_coordinators" ("coordinator_id", "registry_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["coordinator_id", 3], ["registry_id", 4], ["created_at", "2016-06-08 19:21:53.875924"], ["updated_at", "2016-06-08 19:21:53.875924"]]
+  [1m[36m (174.9ms)[0m  [1mcommit transaction[0m
+Completed 302 Found in 425ms (ActiveRecord: 413.0ms)
+
+
+Started GET "/registries/4" for 127.0.0.1 at 2016-06-08 12:21:54 -0700
+Processing by RegistriesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mRegistry Load (0.1ms)[0m  SELECT  "registries".* FROM "registries" WHERE "registries"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mRegistryCoordinator Load (0.1ms)[0m  [1mSELECT "registry_coordinators".* FROM "registry_coordinators" WHERE "registry_coordinators"."registry_id" = ?[0m  [["registry_id", 4]]
+  [1m[35mCoordinator Load (0.1ms)[0m  SELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mRegistryParticipant Load (0.2ms)[0m  SELECT "registry_participants".* FROM "registry_participants" WHERE "registry_participants"."registry_id" = ?  [["registry_id", 4]]
+  Rendered registries/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 54ms (Views: 45.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/participants" for 127.0.0.1 at 2016-06-08 12:21:59 -0700
+Processing by ParticipantsController#index as HTML
+  [1m[36mParticipant Load (0.2ms)[0m  [1mSELECT "participants".* FROM "participants"[0m
+  Rendered participants/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 46ms (Views: 44.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/participants/new" for 127.0.0.1 at 2016-06-08 12:22:01 -0700
+Processing by ParticipantsController#new as HTML
+  [1m[35mRegistry Load (0.3ms)[0m  SELECT "registries".* FROM "registries"
+  Rendered participants/_form.html.erb (11.5ms)
+  Rendered participants/new.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 46ms (Views: 44.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/participants" for 127.0.0.1 at 2016-06-08 12:22:34 -0700
+Processing by ParticipantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bOoCpccC+WXJFBfWt5Tlsv2j/fidQXJwkwT7IZRksY/RMbk4QIc6CaMLZYcD3lBCiLjvx2Ighf2b+kmtc+mZzQ==", "participant"=>{"name"=>"part211", "gender"=>"female", "date_of_birth(1i)"=>"2016", "date_of_birth(2i)"=>"6", "date_of_birth(3i)"=>"8", "date_of_enrollment(1i)"=>"2016", "date_of_enrollment(2i)"=>"6", "date_of_enrollment(3i)"=>"8", "contact_method"=>"phone", "remarks"=>"", "coordinator"=>"coord211", "registry_participants_attributes"=>{"0"=>{"registry_id"=>"4", "_destroy"=>"false"}}}, "commit"=>"Create Participant"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "participants" ("name", "gender", "contact_method", "remarks", "coordinator", "date_of_birth", "date_of_enrollment", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "part211"], ["gender", "female"], ["contact_method", "phone"], ["remarks", ""], ["coordinator", "coord211"], ["date_of_birth", "2016-06-08"], ["date_of_enrollment", "2016-06-08"], ["created_at", "2016-06-08 19:22:34.881896"], ["updated_at", "2016-06-08 19:22:34.881896"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "registry_participants" ("registry_id", "participant_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["registry_id", 4], ["participant_id", 5], ["created_at", "2016-06-08 19:22:34.885407"], ["updated_at", "2016-06-08 19:22:34.885407"]]
+  [1m[35m (313.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/participants/5
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "registry_participants" ("registry_id", "participant_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["registry_id", 4], ["participant_id", 5], ["created_at", "2016-06-08 19:22:35.206347"], ["updated_at", "2016-06-08 19:22:35.206347"]]
+  [1m[36m (104.5ms)[0m  [1mcommit transaction[0m
+Completed 302 Found in 435ms (ActiveRecord: 418.7ms)
+
+
+Started GET "/participants/5" for 127.0.0.1 at 2016-06-08 12:22:35 -0700
+Processing by ParticipantsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mParticipant Load (0.4ms)[0m  SELECT  "participants".* FROM "participants" WHERE "participants"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered participants/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 40ms (Views: 38.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/registries/" for 127.0.0.1 at 2016-06-08 12:22:41 -0700
+Processing by RegistriesController#index as HTML
+  [1m[36mRegistry Load (0.5ms)[0m  [1mSELECT "registries".* FROM "registries"[0m
+  Rendered registries/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 49ms (Views: 46.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/registries/4" for 127.0.0.1 at 2016-06-08 12:22:42 -0700
+Processing by RegistriesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mRegistry Load (0.2ms)[0m  SELECT  "registries".* FROM "registries" WHERE "registries"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mRegistryCoordinator Load (0.2ms)[0m  [1mSELECT "registry_coordinators".* FROM "registry_coordinators" WHERE "registry_coordinators"."registry_id" = ?[0m  [["registry_id", 4]]
+  [1m[35mCoordinator Load (0.1ms)[0m  SELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mRegistryParticipant Load (0.1ms)[0m  SELECT "registry_participants".* FROM "registry_participants" WHERE "registry_participants"."registry_id" = ?  [["registry_id", 4]]
+  [1m[36mParticipant Load (0.1ms)[0m  [1mSELECT  "participants".* FROM "participants" WHERE "participants"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "participants".* FROM "participants" WHERE "participants"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered registries/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 40ms (Views: 33.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/registries/4" for 127.0.0.1 at 2016-06-08 12:24:23 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RegistriesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mRegistry Load (0.4ms)[0m  SELECT  "registries".* FROM "registries" WHERE "registries"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mRegistryCoordinator Load (0.4ms)[0m  [1mSELECT "registry_coordinators".* FROM "registry_coordinators" WHERE "registry_coordinators"."registry_id" = ?[0m  [["registry_id", 4]]
+  [1m[35mCoordinator Load (0.3ms)[0m  SELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mRegistryParticipant Load (0.3ms)[0m  SELECT "registry_participants".* FROM "registry_participants" WHERE "registry_participants"."registry_id" = ?  [["registry_id", 4]]
+  [1m[36mParticipant Load (0.5ms)[0m  [1mSELECT  "participants".* FROM "participants" WHERE "participants"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "participants".* FROM "participants" WHERE "participants"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered registries/show.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 657ms (Views: 471.7ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/assets/coordinators.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-08 12:24:24 -0700
+
+
+Started GET "/assets/participants.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-08 12:24:24 -0700
+
+
+Started GET "/assets/registries.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-08 12:24:24 -0700
+
+
+Started GET "/assets/registry_coordinators.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-08 12:24:24 -0700
+
+
+Started GET "/assets/registry_participants.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-08 12:24:24 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-08 12:24:24 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-08 12:24:24 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-06-08 12:24:24 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-08 12:24:24 -0700
+
+
+Started GET "/assets/scaffolds.self-68fe78044e7b3919ee48042ca0466bad418ae14b7a65d4a20a622821a3eec25d.css?body=1" for 127.0.0.1 at 2016-06-08 12:24:24 -0700
+
+
+Started GET "/assets/jquery_nested_form.self-d38045d10ebdd28aac44152cb451796232091957b86b47bedad1ab171a3a12cd.js?body=1" for 127.0.0.1 at 2016-06-08 12:24:25 -0700
+
+
+Started GET "/assets/participants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-08 12:24:25 -0700
+
+
+Started GET "/assets/coordinators.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-08 12:24:25 -0700
+
+
+Started GET "/assets/registry_coordinators.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-08 12:24:25 -0700
+
+
+Started GET "/assets/registry_participants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-08 12:24:25 -0700
+
+
+Started GET "/assets/registries.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-08 12:24:25 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-06-08 12:24:25 -0700
+
+
+Started GET "/registries" for 127.0.0.1 at 2016-06-08 12:24:35 -0700
+Processing by RegistriesController#index as HTML
+  [1m[36mRegistry Load (0.4ms)[0m  [1mSELECT "registries".* FROM "registries"[0m
+  Rendered registries/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 65ms (Views: 63.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/registries/new" for 127.0.0.1 at 2016-06-08 12:24:37 -0700
+Processing by RegistriesController#new as HTML
+  [1m[35mCoordinator Load (0.3ms)[0m  SELECT "coordinators".* FROM "coordinators"
+  Rendered registries/_form.html.erb (45.5ms)
+  Rendered registries/new.html.erb within layouts/application (51.4ms)
+Completed 200 OK in 117ms (Views: 114.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/participants" for 127.0.0.1 at 2016-06-08 12:24:44 -0700
+Processing by ParticipantsController#index as HTML
+  [1m[36mParticipant Load (0.4ms)[0m  [1mSELECT "participants".* FROM "participants"[0m
+  Rendered participants/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 93ms (Views: 90.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/participants/new" for 127.0.0.1 at 2016-06-08 12:24:47 -0700
+Processing by ParticipantsController#new as HTML
+  [1m[35mRegistry Load (0.4ms)[0m  SELECT "registries".* FROM "registries"
+  Rendered participants/_form.html.erb (40.9ms)
+  Rendered participants/new.html.erb within layouts/application (43.6ms)
+Completed 200 OK in 106ms (Views: 102.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/participants" for 127.0.0.1 at 2016-06-08 12:25:13 -0700
+Processing by ParticipantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ixDbcMXExB7Wudo+CWLOhSBEXb8Rw2jCOyuuGNsC+Pw2y2DtQkEHcrymqG+9KHt1VV9PgO6in08z1RyUPI/Qvg==", "participant"=>{"name"=>"part311", "gender"=>"female", "date_of_birth(1i)"=>"2016", "date_of_birth(2i)"=>"6", "date_of_birth(3i)"=>"8", "date_of_enrollment(1i)"=>"2016", "date_of_enrollment(2i)"=>"6", "date_of_enrollment(3i)"=>"8", "contact_method"=>"phone", "remarks"=>"", "coordinator"=>"coord1", "registry_participants_attributes"=>{"0"=>{"registry_id"=>"3", "_destroy"=>"false"}}}, "commit"=>"Create Participant"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "participants" ("name", "gender", "contact_method", "remarks", "coordinator", "date_of_birth", "date_of_enrollment", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "part311"], ["gender", "female"], ["contact_method", "phone"], ["remarks", ""], ["coordinator", "coord1"], ["date_of_birth", "2016-06-08"], ["date_of_enrollment", "2016-06-08"], ["created_at", "2016-06-08 19:25:13.717322"], ["updated_at", "2016-06-08 19:25:13.717322"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "registry_participants" ("registry_id", "participant_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["registry_id", 3], ["participant_id", 6], ["created_at", "2016-06-08 19:25:13.723481"], ["updated_at", "2016-06-08 19:25:13.723481"]]
+  [1m[35m (214.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/participants/6
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "registry_participants" ("registry_id", "participant_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["registry_id", 3], ["participant_id", 6], ["created_at", "2016-06-08 19:25:13.950209"], ["updated_at", "2016-06-08 19:25:13.950209"]]
+  [1m[36m (212.4ms)[0m  [1mcommit transaction[0m
+Completed 302 Found in 456ms (ActiveRecord: 429.4ms)
+
+
+Started GET "/participants/6" for 127.0.0.1 at 2016-06-08 12:25:14 -0700
+Processing by ParticipantsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mParticipant Load (0.2ms)[0m  SELECT  "participants".* FROM "participants" WHERE "participants"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered participants/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 94ms (Views: 91.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/registries/" for 127.0.0.1 at 2016-06-08 12:25:21 -0700
+Processing by RegistriesController#index as HTML
+  [1m[36mRegistry Load (0.5ms)[0m  [1mSELECT "registries".* FROM "registries"[0m
+  Rendered registries/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 79ms (Views: 76.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/registries/1" for 127.0.0.1 at 2016-06-08 12:25:23 -0700
+Processing by RegistriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRegistry Load (0.2ms)[0m  SELECT  "registries".* FROM "registries" WHERE "registries"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mRegistryCoordinator Load (0.2ms)[0m  [1mSELECT "registry_coordinators".* FROM "registry_coordinators" WHERE "registry_coordinators"."registry_id" = ?[0m  [["registry_id", 1]]
+  [1m[35mCoordinator Load (0.2ms)[0m  SELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mRegistryParticipant Load (0.2ms)[0m  SELECT "registry_participants".* FROM "registry_participants" WHERE "registry_participants"."registry_id" = ?  [["registry_id", 1]]
+  [1m[36mParticipant Load (0.2ms)[0m  [1mSELECT  "participants".* FROM "participants" WHERE "participants"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "participants".* FROM "participants" WHERE "participants"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mParticipant Load (0.1ms)[0m  [1mSELECT  "participants".* FROM "participants" WHERE "participants"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "participants".* FROM "participants" WHERE "participants"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered registries/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 74ms (Views: 62.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/registries" for 127.0.0.1 at 2016-06-08 12:25:26 -0700
+Processing by RegistriesController#index as HTML
+  [1m[36mRegistry Load (0.3ms)[0m  [1mSELECT "registries".* FROM "registries"[0m
+  Rendered registries/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 54ms (Views: 52.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/registries/2" for 127.0.0.1 at 2016-06-08 12:25:27 -0700
+Processing by RegistriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRegistry Load (0.2ms)[0m  SELECT  "registries".* FROM "registries" WHERE "registries"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mRegistryCoordinator Load (0.3ms)[0m  [1mSELECT "registry_coordinators".* FROM "registry_coordinators" WHERE "registry_coordinators"."registry_id" = ?[0m  [["registry_id", 2]]
+  [1m[35mCoordinator Load (0.2ms)[0m  SELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mRegistryParticipant Load (0.4ms)[0m  SELECT "registry_participants".* FROM "registry_participants" WHERE "registry_participants"."registry_id" = ?  [["registry_id", 2]]
+  [1m[36mParticipant Load (0.2ms)[0m  [1mSELECT  "participants".* FROM "participants" WHERE "participants"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "participants".* FROM "participants" WHERE "participants"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered registries/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 83ms (Views: 71.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/registries" for 127.0.0.1 at 2016-06-08 12:25:29 -0700
+Processing by RegistriesController#index as HTML
+  [1m[36mRegistry Load (0.3ms)[0m  [1mSELECT "registries".* FROM "registries"[0m
+  Rendered registries/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 57ms (Views: 55.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/registries/3" for 127.0.0.1 at 2016-06-08 12:25:31 -0700
+Processing by RegistriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mRegistry Load (0.2ms)[0m  SELECT  "registries".* FROM "registries" WHERE "registries"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mRegistryCoordinator Load (0.1ms)[0m  [1mSELECT "registry_coordinators".* FROM "registry_coordinators" WHERE "registry_coordinators"."registry_id" = ?[0m  [["registry_id", 3]]
+  [1m[35mCoordinator Load (0.1ms)[0m  SELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mRegistryParticipant Load (0.2ms)[0m  SELECT "registry_participants".* FROM "registry_participants" WHERE "registry_participants"."registry_id" = ?  [["registry_id", 3]]
+  [1m[36mParticipant Load (0.2ms)[0m  [1mSELECT  "participants".* FROM "participants" WHERE "participants"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "participants".* FROM "participants" WHERE "participants"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mParticipant Load (0.1ms)[0m  [1mSELECT  "participants".* FROM "participants" WHERE "participants"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "participants".* FROM "participants" WHERE "participants"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered registries/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 79ms (Views: 69.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/participants" for 127.0.0.1 at 2016-06-08 12:38:42 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ParticipantsController#index as HTML
+  [1m[35mParticipant Load (0.2ms)[0m  SELECT "participants".* FROM "participants"
+  Rendered participants/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 209ms (Views: 193.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/registries/" for 127.0.0.1 at 2016-06-08 12:39:34 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RegistriesController#index as HTML
+  [1m[35mRegistry Load (0.2ms)[0m  SELECT "registries".* FROM "registries"
+  Rendered registries/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 208ms (Views: 191.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/coordinators.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-08 12:39:34 -0700
+
+
+Started GET "/assets/participants.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-08 12:39:34 -0700
+
+
+Started GET "/assets/registries.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-08 12:39:34 -0700
+
+
+Started GET "/assets/registry_coordinators.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-08 12:39:34 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-08 12:39:34 -0700
+
+
+Started GET "/assets/registry_participants.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-08 12:39:34 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-08 12:39:34 -0700
+
+
+Started GET "/assets/scaffolds.self-68fe78044e7b3919ee48042ca0466bad418ae14b7a65d4a20a622821a3eec25d.css?body=1" for 127.0.0.1 at 2016-06-08 12:39:34 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-06-08 12:39:34 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-08 12:39:34 -0700
+
+
+Started GET "/assets/jquery_nested_form.self-d38045d10ebdd28aac44152cb451796232091957b86b47bedad1ab171a3a12cd.js?body=1" for 127.0.0.1 at 2016-06-08 12:39:34 -0700
+
+
+Started GET "/assets/participants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-08 12:39:34 -0700
+
+
+Started GET "/assets/coordinators.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-08 12:39:34 -0700
+
+
+Started GET "/assets/registries.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-08 12:39:34 -0700
+
+
+Started GET "/assets/registry_coordinators.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-08 12:39:34 -0700
+
+
+Started GET "/assets/registry_participants.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-08 12:39:34 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-06-08 12:39:34 -0700
+
+
+Started GET "/registries/4" for 127.0.0.1 at 2016-06-08 12:39:37 -0700
+Processing by RegistriesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRegistry Load (0.2ms)[0m  [1mSELECT  "registries".* FROM "registries" WHERE "registries"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mRegistryCoordinator Load (0.1ms)[0m  SELECT "registry_coordinators".* FROM "registry_coordinators" WHERE "registry_coordinators"."registry_id" = ?  [["registry_id", 4]]
+  [1m[36mCoordinator Load (0.4ms)[0m  [1mSELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mRegistryParticipant Load (0.1ms)[0m  [1mSELECT "registry_participants".* FROM "registry_participants" WHERE "registry_participants"."registry_id" = ?[0m  [["registry_id", 4]]
+  [1m[35mParticipant Load (0.1ms)[0m  SELECT  "participants".* FROM "participants" WHERE "participants"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "participants".* FROM "participants" WHERE "participants"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered registries/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 72ms (Views: 21.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/registries" for 127.0.0.1 at 2016-06-08 12:39:40 -0700
+Processing by RegistriesController#index as HTML
+  [1m[35mRegistry Load (0.2ms)[0m  SELECT "registries".* FROM "registries"
+  Rendered registries/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/registries/3" for 127.0.0.1 at 2016-06-08 12:39:41 -0700
+Processing by RegistriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRegistry Load (0.1ms)[0m  [1mSELECT  "registries".* FROM "registries" WHERE "registries"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mRegistryCoordinator Load (0.1ms)[0m  SELECT "registry_coordinators".* FROM "registry_coordinators" WHERE "registry_coordinators"."registry_id" = ?  [["registry_id", 3]]
+  [1m[36mCoordinator Load (0.1ms)[0m  [1mSELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "coordinators".* FROM "coordinators" WHERE "coordinators"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mRegistryParticipant Load (0.1ms)[0m  [1mSELECT "registry_participants".* FROM "registry_participants" WHERE "registry_participants"."registry_id" = ?[0m  [["registry_id", 3]]
+  [1m[35mParticipant Load (0.1ms)[0m  SELECT  "participants".* FROM "participants" WHERE "participants"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "participants".* FROM "participants" WHERE "participants"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mParticipant Load (0.1ms)[0m  SELECT  "participants".* FROM "participants" WHERE "participants"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "participants".* FROM "participants" WHERE "participants"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered registries/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 24ms (Views: 20.2ms | ActiveRecord: 0.5ms)

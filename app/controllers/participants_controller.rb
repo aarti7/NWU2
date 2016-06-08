@@ -40,9 +40,13 @@ class ParticipantsController < ApplicationController
 
     unless participant_params[:registry_participants_attributes].nil?
       participant_params[:registry_participants_attributes].each do |key,value|
+        print value[:id]
+        print value
+        if check_if_exists(value[:registry_id],@participant.id).nil?
           value = value.except(:_destroy)
           @registry_participant = @participant.registry_participants.new(value)
           @registry_participant.save
+        end
       end
     end
   end
@@ -63,8 +67,10 @@ class ParticipantsController < ApplicationController
     unless participant_params[:registry_participants_attributes].nil?
       participant_params[:registry_participants_attributes].each do |key,value|
         if value[:_destroy]=="1"
-          @registry_participant = @participant.registry_participants.find(value[:id])
-          @registry_participant.destroy
+          @registry_participant = check_if_exists(value[:registry_id])
+          unless @registry_participant.nil?
+            @registry_participant.destroy
+          end
         end
       end
     end
@@ -95,6 +101,16 @@ class ParticipantsController < ApplicationController
         end
       end
       return open_registries
+    end
+
+    def check_if_exists(registry_id,participant_id)
+      RegistryParticipant.all.each do |reg|
+        if (reg.registry_id==registry_id) and (reg.participant_id==participant_id)
+          return reg
+        else
+          return nil
+        end
+      end
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
