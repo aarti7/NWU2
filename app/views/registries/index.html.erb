@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Registries</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Location</th>
+      <th>Open</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @registries.each do |registry| %>
+      <tr>
+        <td><%= registry.name %></td>
+        <td><%= registry.location %></td>
+        <td><%= registry.open %></td>
+        <td><%= link_to 'Show', registry %></td>
+        <td><%= link_to 'Edit', edit_registry_path(registry) %></td>
+        <td><%= link_to 'Destroy', registry, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Registry', new_registry_path %>

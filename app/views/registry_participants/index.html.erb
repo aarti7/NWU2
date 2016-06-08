@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Registry Participants</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Registry</th>
+      <th>Participant</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @registry_participants.each do |registry_participant| %>
+      <tr>
+        <td><%= registry_participant.registry_id %></td>
+        <td><%= registry_participant.participant_id %></td>
+        <td><%= link_to 'Show', registry_participant %></td>
+        <td><%= link_to 'Edit', edit_registry_participant_path(registry_participant) %></td>
+        <td><%= link_to 'Destroy', registry_participant, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Registry participant', new_registry_participant_path %>

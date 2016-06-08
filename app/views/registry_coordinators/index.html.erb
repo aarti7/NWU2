@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Registry Coordinators</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Registry</th>
+      <th>Coordinator</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @registry_coordinators.each do |registry_coordinator| %>
+      <tr>
+        <td><%= registry_coordinator.registry_id %></td>
+        <td><%= registry_coordinator.coordinator_id %></td>
+        <td><%= link_to 'Show', registry_coordinator %></td>
+        <td><%= link_to 'Edit', edit_registry_coordinator_path(registry_coordinator) %></td>
+        <td><%= link_to 'Destroy', registry_coordinator, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Registry coordinator', new_registry_coordinator_path %>

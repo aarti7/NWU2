@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @participant.name %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @participant.gender %>
+</p>
+
+<p>
+  <strong>Date of birth:</strong>
+  <%= @participant.date_of_birth %>
+</p>
+
+<p>
+  <strong>Date of enrollment:</strong>
+  <%= @participant.date_of_enrollment %>
+</p>
+
+<p>
+  <strong>Contact method:</strong>
+  <%= @participant.contact_method %>
+</p>
+
+<p>
+  <strong>Remarks:</strong>
+  <%= @participant.remarks %>
+</p>
+
+<p>
+  <strong>Coordinator:</strong>
+  <%= @participant.coordinator %>
+</p>
+
+<%= link_to 'Edit', edit_participant_path(@participant) %> |
+<%= link_to 'Back', participants_path %>

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Registry:</strong>
+  <%= @registry_coordinator.registry_id %>
+</p>
+
+<p>
+  <strong>Coordinator:</strong>
+  <%= @registry_coordinator.coordinator_id %>
+</p>
+
+<%= link_to 'Edit', edit_registry_coordinator_path(@registry_coordinator) %> |
+<%= link_to 'Back', registry_coordinators_path %>

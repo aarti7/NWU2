@@ -1,0 +1,25 @@
+<%= form_for(@registry_participant) do |f| %>
+  <% if @registry_participant.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@registry_participant.errors.count, "error") %> prohibited this registry_participant from being saved:</h2>
+
+      <ul>
+      <% @registry_participant.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :registry_id %><br>
+    <%= f.number_field :registry_id %>
+  </div>
+  <div class="field">
+    <%= f.label :participant_id %><br>
+    <%= f.number_field :participant_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

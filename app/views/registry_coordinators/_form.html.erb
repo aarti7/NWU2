@@ -1,0 +1,25 @@
+<%= form_for(@registry_coordinator) do |f| %>
+  <% if @registry_coordinator.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@registry_coordinator.errors.count, "error") %> prohibited this registry_coordinator from being saved:</h2>
+
+      <ul>
+      <% @registry_coordinator.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :registry_id %><br>
+    <%= f.number_field :registry_id %>
+  </div>
+  <div class="field">
+    <%= f.label :coordinator_id %><br>
+    <%= f.number_field :coordinator_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

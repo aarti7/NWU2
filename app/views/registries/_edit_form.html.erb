@@ -1,0 +1,35 @@
+<%= nested_form_for(@registry) do |f| %>
+  <% if @registry.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@registry.errors.count, "error") %> prohibited this registry from being saved:</h2>
+
+      <ul>
+      <% @registry.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :location %><br>
+    <%= f.text_field :location %>
+  </div>
+  <div class="field">
+    <%= f.label :open %><br>
+    <%= f.check_box :open %>
+  </div>
+<%= f.fields_for :registry_coordinators do |task_form| %>
+     <%= task_form.select :coordinator_id, Coordinator.all.collect { |p| [ p.email, p.id ] } %>
+     <%= task_form.link_to_remove "Remove this task" %>
+  <% end %>
+  <p><%= f.link_to_add "Add a coordinator", :registry_coordinators %></p>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
